@@ -1,0 +1,89 @@
+div.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 80px 1fr 252px;
+}
+
+header {
+  border-bottom: 1px solid #f5f4fa;
+}
+
+ul.portfolio_nav {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+ul.portfolio_nav li {
+  display: inline-block;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-right: 8px;
+}
+
+ul.portfolio_nav li:hover {
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+div#portfolio_all {
+  justify-content: center;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 404px);
+  grid-template-columns: repeat(auto-fill, 370px);
+  grid-gap: 30px;
+  margin-bottom: 94px;
+}
+
+div.tile {
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+div.tile:hover {
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+div.tile img {
+  width: 370px;
+  height: 294px;
+}
+
+div.tile p.caption {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 24px;
+}
+
+div.tile p.subCaption {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+}
